@@ -20,3 +20,8 @@ data/
 *.swp
 *.bak
 *.swo
+
+# Doccano related files
+*.session # Telethon session files
+db.sqlite3
+media/

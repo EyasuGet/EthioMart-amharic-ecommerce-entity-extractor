@@ -70,3 +70,16 @@ ethiomart-amharic-ecommerce-ner/
     ```
     This will generate `data/preprocessed_data/preprocessed_amharic_ecommerce_messages.json`.
 
+### Task 2: Data Labeling Preparation
+
+1.  **Extract Annotation Subset:**
+    ```bash
+    python scripts/labeling_prep/extract_annotation_subset.py
+    ```
+    This will create `data/labeled_data/annotation_subset.json` with 30-50 messages for labeling.
+
+2.  **Set up Doccano for Labeling:**
+    * Install Doccano (refer to Doccano documentation or previous instructions).
+    * Start Doccano server: `doccano webserver --port 8000`
+    * Create a "Sequence Labeling" project, define `PRODUCT`, `LOC`, `PRICE` labels.
+    * Import `data/labeled_data/annotation_subset.json` into Doccano.# EthioMart-amharic-ecommerce-entity-extractor

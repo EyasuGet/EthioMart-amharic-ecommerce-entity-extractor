@@ -1,10 +1,13 @@
 telethon>=1.27
 python-jsonlines>=1.2.0
-doccano>=1.8.0 # This pulls in Django, djangorestframework, pandas etc.
-# Add other dependencies if you use them beyond Doccano's requirements.
-# Example: If you plan to use HuggingFace Transformers directly later:
-# transformers
-# datasets
-# accelerate
-# evaluate
-# torch # or tensorflow
+doccano>=1.8.0
+transformers
+datasets
+seqeval
+accelerate
+evaluate
+torch # PyTorch is the backend for most Hugging Face models
+lime
+shap
+pandas # Explicitly include as it's used in scorecard
+numpy 

@@ -175,3 +175,21 @@ To ensure code quality, readability, and maintainability in a collaborative envi
         * `docs: Update README with setup instructions`
         * `refactor(preprocessing): Improve Amharic normalization logic`
         * `chore: Update dependencies`
+## Technical Stack & Tools
+
+* **Language:** Python 3.8+
+* **Telegram Interaction:** `telethon`
+* **Environment Management:** `python-dotenv`
+* **Data Manipulation:** `pandas`
+* **NLP & LLM Fine-tuning:** `transformers`, `peft`, `datasets`, `accelerate`
+* **Evaluation Metrics:** `evaluate`, `seqeval`
+* **Model Interpretability:** `shap`, `lime` (conceptual usage)
+* **Computing Environment:** Google Colab (recommended for GPU access), Local Machine with GPU.
+* **Version Control:** Git, GitHub
+
+### Prerequisites
+
+* Python 3.8+
+* Access to a GPU (recommended for fine-tuning)
+* **Telegram API Credentials:** Obtain `api_id` and `api_hash` from [my.telegram.org](https://my.telegram.org).
+* **Hugging Face Account & Token:** Create an account on [huggingface.co](https://huggingface.co/) and generate a `read` access token from [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens).
